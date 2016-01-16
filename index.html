@@ -15,9 +15,12 @@
 <body>
 	<div class="navbar-fixed">
 	<nav class="white" role="navigation">
-    <div class="nav-wrapper" style="margin-right:80px; margin-left:80px">
+    <div class="nav-wrapper" style="margin-right:80px; margin-left:100px">
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-      	<a id="logo-container" href="index.html" class="brand-logo">
+       <li style="margin-left:-100px; padding-left:10px" data-activates="slide-out" class="button-collapse"> 
+        <i class="tiny material-icons grey-text">list</i>
+      </li>
+        <a id="logo-container" href="index.html" class="brand-logo">
       		<img src="images/logo.png" width="50px" style="margin-top:5px"><img>
       		<div class="brand-logo">CSFest</div>
       	</a>
@@ -29,7 +32,39 @@
 
     </div>
   </nav>
-</div>
+  </div>
+
+  <div> 
+  <ul id="slide-out" class="side-nav" style="width:200px; opacity:0.8">
+        <li class="bold"><a href="#" class="waves-effect waves-teal">
+          <div class="large material-icons grey-text">web</div>
+          Events
+        </a>
+        </li>
+
+        <li class="bold"><a href="#" class="waves-effect waves-teal" class="teal-text">
+          <i class="small material-icons grey-text" style="margin-bottom:-5px">supervisor_account</i>
+          About us 
+         </a>
+        </li>
+        
+        <li class="bold"><a href="#" class="waves-effect waves-teal">
+          <i class="small material-icons grey-text" style="margin-bottom:-5px">class</i>
+          Tutorials
+        </a>
+        </li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal">
+          <i class="small material-icons grey-text" style="margin-bottom:-5px">perm_camera_mic</i>
+          Gallery          
+        </a>
+        </li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal">
+          <i class="small material-icons grey-text" style="margin-bottom:-5px">credit_card</i>
+          Sponsors
+        </a>
+        </li>
+  </ul>
+  
 
   <div id="index-banner" class="parallax-container" style="height:500px">
     <div class="section no-pad-bot">
@@ -40,7 +75,7 @@
         		<h5 class="header col s12 light">For the very first time in the city of joy </h5>
         </div>
         <div class="row center" style="margin-top:80px">
-          <a href="blog.html" id="download-button" class="btn-large waves-effect waves-light">Events list </a>
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light">Events list </a>
         </div>
         <br><br>
 
@@ -63,8 +98,6 @@
           </div>
         </div>
 	  </div>
-
-
     </div>
   </div>
 
@@ -72,7 +105,7 @@
   <div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->
+      
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
@@ -103,14 +136,26 @@
       </div>
 
     </div>
-    <br><br>
+  </div>
+  <div class="row center" style="margin-top:80px">
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light z-depth-5">Sponsor CSFEST </a>
+        </div>
 
+  <div class="container">
     <div class="section">
-
+      
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h2 class="center orange-text"><i class="large material-icons">loyalty</i></h2>
+            <h5 class="center">Why sponsor CSFEST?</h5>
+            <h6> <p style="font-size: 120%" class="light">FJdbasjbdkasjbdkjabdasjkbd jkbadjksabdjk ajksdkajsbd kjadkjabsdkjb adnjkasbdkjlasbd kjasdnjkbasdjklsab jkasdkjbasdl asdbajksbdjksab akjsdbkjabdkjasb asjdbkjabds kjabsdkjaslbdlkbsa kjbsdaksjbd. </p> </h6>
+          </div>
+        </div>
+        <h6> <p style="font-size: 120%" class="light center">Within a week of release, CSfest is attracting sponsors from ....  (List of principal sponsors)</p> </h6>
+    </div>
     </div>
   </div>
-
-
 
   <footer class="page-footer teal">
     <div class="container">
@@ -138,11 +183,13 @@
       </div>
     </div>
   </footer>
+</div>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../../dist/js/materialize.js"></script>
   <script src="js/init.js"></script>
+
 
   </body>
 </html>
