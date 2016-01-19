@@ -10,9 +10,128 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script>
+  window.onload = function() {
+    $('select').material_select();
+    $('.modal-trigger').leanModal();
+  };
+  </script>
 </head>
 
 <body>
+
+<!--modal 1-->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4 class="teal-text light">Sign up form</h4>
+      <div class="row" id="sign_up_form">
+        <form class="col s12">
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Name</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Enter password</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="pass_confirm" type="password" class="validate">
+              <label for="pass_confirm">Confirm password</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="university" type="text" class="validate">
+              <label for="university">College/University</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <select>
+              <option value="" disabled selected>Choose your degree</option>
+              <option value="1">B.E.</option>
+              <option value="2">B.Tech</option>
+              <option value="3">B.S./B.Sc</option>
+              <option value="4">B.A.</option>
+            </select>
+            <label>Degree</label>
+          </div>
+
+          <div class="row">
+            <select>
+              <option value="" disabled selected>Year of study</option>
+              <option value="1">Freshman (1st)</option>
+              <option value="2">Sophomore (2nd)</option>
+              <option value="3">Junior (3rd)</option>
+              <option value="4">Senior (4th)</option>
+            </select>
+            <label>Year of study</label>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="dept" type="text" class="validate">
+              <label for="dept">Department</label>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="#!" class="white-text modal-action modal-close waves-effect waves-orange btn z-depth-4">SIGN UP</a>
+    </div>
+  </div>
+  <!--end of modal1-->
+
+  <!--modal 2: login modal-->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4 class="teal-text light">Log in </h4>
+      <div class="row" id="sign_up_form">
+        <form class="col s12">
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email_in" type="email" class="validate">
+              <label for="email_in">Email</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password_in" type="password" class="validate">
+              <label for="password_in">Password</label>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="white-text modal-action modal-close waves-effect waves-orange btn z-depth-4">LOG IN</a>
+    </div>
+  </div>
+  <!--end of modal2-->
+
 	<div class="navbar-fixed">
 	<nav class="white" role="navigation">
     <div class="nav-wrapper" style="margin-right:80px; margin-left:100px">
@@ -26,8 +145,8 @@
       	</a>
       </ul>
       <ul class="right hide-on-med-and-down">
-      	<a href="#" align="left" class="btn waves-effect waves-light z-depth-3">LOG IN</a>
-      	<a href="#" align="right" class="btn waves-effect waves-light z-depth-3">SIGN UP</a>
+      	<a class="modal-trigger waves-effect waves-light btn z-depth-4" href="#modal2">Log in</a>
+      	<a class="modal-trigger waves-effect waves-light btn z-depth-4" href="#modal1">Sign up</a>
       </ul>
 
     </div>
